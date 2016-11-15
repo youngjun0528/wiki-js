@@ -17,23 +17,22 @@ public class ex01 {
 	
 	
 	public static String  inputScanner(){
-		String name = null;
+		String input = null;
 		
 		Scanner scanner = new Scanner(System.in);
-		name = scanner.nextLine();
+		input = scanner.nextLine();
 		
-		
-		return name;
+		return input;
 	}
 	
 	public static String concatScanner(String out){
-		String answer = "";
+		String output = "";
 		
-		answer = answer.concat("Hello, ");
-		answer = answer.concat(out);
-		answer = answer.concat(", nice to meet you!");
+		output = output.concat("Hello, ");
+		output = output.concat(out);
+		output = output.concat(", nice to meet you!");
 		
-		return answer;
+		return output;
 	}
 	
 	public static void outputScanner(String out){
