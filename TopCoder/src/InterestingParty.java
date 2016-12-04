@@ -77,7 +77,7 @@ public class InterestingParty {
 		
 		// 처음 생각했던 방법인 HashMap을 사용하여 사람 기준이 주제 기준으로 찾는 것이 훨씬 명확한다.
 		// 적어도 내 기준에서는...
-		// 결국 응용기술에 나왔다. 거기서는 Dictionary로 처리하였지만...
+		// 결국 응용기술에 나왔다.
 		
 		int max = 0;
 		
