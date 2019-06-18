@@ -1,4 +1,9 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+# 알파벳 개수
 # https://www.acmicpc.net/problem/10808
+
 from string import ascii_lowercase
 from collections import Counter
 
