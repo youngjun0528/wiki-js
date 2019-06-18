@@ -1,9 +1,8 @@
-
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-#비밀번호 발음하기
-#https://www.acmicpc.net/problem/4659
+# 비밀번호 발음하기
+# https://www.acmicpc.net/problem/4659
 
 import sys
 
