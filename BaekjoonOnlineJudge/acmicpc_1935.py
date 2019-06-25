@@ -59,7 +59,4 @@ if __name__ == '__main__':
     for cnt in range(int(num)):
         inputData.append(sys.stdin.readline().strip())
     main(operator, inputData)
-
-
-
-
+    
