@@ -56,5 +56,4 @@ if __name__ == '__main__':
     end = num_matrix[row-1][col-1]
     path = find_shortest_path(graph, '1', str(end))
     print(len(path))
-
     
