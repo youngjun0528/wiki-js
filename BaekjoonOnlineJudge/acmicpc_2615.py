@@ -159,3 +159,5 @@ if __name__ == '__main__':
 
     if check_one and check_sec:
         print(0)
+
+        
