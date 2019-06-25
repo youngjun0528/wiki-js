@@ -51,5 +51,4 @@ if __name__ == '__main__':
             print('<' + pw + '> is acceptable.')
         else:
             print('<' + pw + '> is not acceptable.')
-
-            
+   
