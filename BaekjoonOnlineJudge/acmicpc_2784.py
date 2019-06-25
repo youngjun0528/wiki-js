@@ -39,3 +39,4 @@ if __name__ == '__main__':
         data = sys.stdin.readline().strip()
         inputData.append(data)
     main(inputData)
+    
