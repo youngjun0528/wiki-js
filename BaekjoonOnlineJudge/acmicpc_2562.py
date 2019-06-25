@@ -17,3 +17,5 @@ if __name__ == '__main__':
     for cnt in range(9):
         inputData.append(int(sys.stdin.readline().strip()))
     main(inputData)
+
+    
