@@ -28,3 +28,5 @@ if __name__ == '__main__':
     for cnt in range(8):
         map.append([data for data in sys.stdin.readline().strip()])
     main(map)
+
+    
