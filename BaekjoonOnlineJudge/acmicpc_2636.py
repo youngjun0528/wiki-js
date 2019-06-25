@@ -87,3 +87,5 @@ if __name__ == '__main__':
         row = sys.stdin.readline().strip().split(" ")
         inputData.append([int(data) for data in row])
     main(inputData)
+
+    
