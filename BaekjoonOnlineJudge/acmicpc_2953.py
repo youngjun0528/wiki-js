@@ -20,3 +20,5 @@ if __name__ == '__main__':
         data = sys.stdin.readline().strip().split(' ')
         inputData[cnt] = data
     main(inputData)
+
+    
