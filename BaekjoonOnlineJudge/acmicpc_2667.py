@@ -104,3 +104,5 @@ if __name__ == '__main__':
     for cnt in range(int(num)):
         map.append([int(data) for data in sys.stdin.readline().strip()])
     main(map)
+
+    
