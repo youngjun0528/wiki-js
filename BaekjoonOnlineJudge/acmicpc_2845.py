@@ -14,3 +14,5 @@ if __name__ == '__main__':
     for data in inputData_arr:
         result += str(int(data) - member) + ' '
     print(result)
+
+    
