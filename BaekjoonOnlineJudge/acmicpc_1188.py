@@ -6,6 +6,7 @@
 
 import sys
 line = str(sys.stdin.readline().strip()).split(' ')
+
 sosage = int(line[0])
 man = int(line[1])
 
