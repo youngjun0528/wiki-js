@@ -20,6 +20,8 @@
     4. 통합 테스트 
         1. 시나리오 테스트
 
+
+
 ### Develop
 
 #### Android Mobile App Test 자동화 Tool 개발
@@ -47,7 +49,7 @@ Android 모바일 UI 자동화 테스트를 위한 Program
       1. Device 화면의 좌표 기반으로 Test가 수행
       2. 최종 결과 이미지와 기대 이미지와 동일한지 판단
 
-![](C:\Users\young\Documents\반디카메라\Apache Tomcat WEBWAS.png)
+![](https://gitlab.com/youngjun0528/moheeto-io/-/raw/master/PersonalWorkHistory/Resource/Test.png)
 
 
 
@@ -58,32 +60,56 @@ Android 모바일 UI 자동화 테스트를 위한 Program
 모바일 기획, 개발, 테스트 등 전반적인 업무지원 지스템 운영
 
 1. 환경구성
+
    1. IBM WebSphere + LG CNS DevOn Framework + GWT(Google Web Toolkit) - SmartClient + IBM DB2 + Web Basic Tec.(Javascript, JQuery, HTML, JSP)
+
       * GWT(Google Web Toolkit) - SmartClient
         * Java Script GUI Framework
         * Template 방식으로 DOM 객체를 생성한 후 이후 각 화면 별로 랜더링 후 SPA와 유사하게 작동
+
+      ![](https://gitlab.com/youngjun0528/moheeto-io/-/raw/master/PersonalWorkHistory/Resource/Apache%20Tomcat%20WEBWAS.png)
+
 2. 요구사항 분석 및 기능 개발
+
    1. 주요 기능 개발
+
       1. 외부 시스템 연동을 위한 인터페이스 개발 및 관리
+
          1. DB Data Message Queue 방식
+
       2. 배치 프로그램 개발 및 관리
+
       3. File Upload 기능 개선
+
       4. Web UI 개선
+
       5. Excel File 버전 관리 및 Excel Data Parsing 후 처리
+
          1. Apache POI Lib. 사용 
-         2. ![]()
+
+         ![](https://gitlab.com/youngjun0528/moheeto-io/-/raw/master/PersonalWorkHistory/Resource/Excel%20Parsing.png)
+
 3. 형상 관리 
+
    1. SVN
+
 4. 품질 관리 
+
    1. APM(Application Performance Managemant) 모니터링 및 Transaction 감시 
    2. 단위 테스트 케이스 개발, 수행 및 조치
    3. 정석분석 Sonar
+
 5. 배포 관리 
+
    1. Jenkins Build 및 Deploy
+
 6. 데이터 관리 
+
    1. 데이터 정합성 확인 및 조치
    2. 통계 데이터 추출
    3. 요구사항에 맞는 데이터 추출 및 정제
+
+
 
 #### Mobile Log Management System 구축 및 운영
 
@@ -96,7 +122,10 @@ Android 모바일 UI 자동화 테스트를 위한 Program
       1. Ms Azure( Linux ) + Apache/Tomcat + Spring Framework + MySQL + Web Basic Tec.(Javascript, JQuery, HTML, JSP)
    2. Server REST API System
       1. Linux Server +  + Apache/Tomcat + Spring Framework + MySQL
-2. 요구사항 분석 및 기능 개발
+
+![](https://gitlab.com/youngjun0528/moheeto-io/-/raw/master/PersonalWorkHistory/Resource/Azure%20Cloud.png)
+
+1. 요구사항 분석 및 기능 개발
    1. Log File이 업로드 되는 Cloud Sync Server App 개발
       1. MS Azure Linux Instance
       2. 3자 테스터가 사외망에서 접근해야 하기에, Cloud Instance로 로그파일 업로드
@@ -107,11 +136,13 @@ Android 모바일 UI 자동화 테스트를 위한 Program
       3. HP Application LifeCycle Management의 Test 관리 연동
    3. 형상 관리
    4. SVN
-3. 품질 관리
+2. 품질 관리
    1. 단위 테스트 케이스 개발, 수행 및 조치
    2. 정적분석 Sonar
-4. 배포 관리
+3. 배포 관리
    1. Jenkins Build 및 Depoly
+
+
 
 #### Software Code Quality System 개선 및 운영
 
@@ -132,6 +163,8 @@ Android 모바일 UI 자동화 테스트를 위한 Program
       1. Build 정보
    3. Jira
       1. Release 정보
+
+![](https://gitlab.com/youngjun0528/moheeto-io/-/raw/master/PersonalWorkHistory/Resource/Jenkins.png)
 
 #### IoT 기기 간 연동, 이벤트 로그 수집, 분석 System 개선
 
