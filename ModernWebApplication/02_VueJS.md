@@ -2,7 +2,7 @@
 title: 02.Vue.js
 description: 
 published: true
-date: 2021-05-03T08:10:37.310Z
+date: 2021-05-03T08:29:26.539Z
 tags: 
 editor: markdown
 dateCreated: 2021-04-19T05:36:56.365Z
@@ -270,3 +270,6 @@ Vue.filter('datetime', function(value){
   return formatter.format(value);
 });
 ```
+
+## 믹스인
+모든 컴포넌트의 옵션을 포함할 수 있는 자바스크립트 객체
