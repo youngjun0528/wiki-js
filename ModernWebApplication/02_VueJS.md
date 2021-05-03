@@ -2,7 +2,7 @@
 title: 02.Vue.js
 description: 
 published: true
-date: 2021-05-03T04:35:02.953Z
+date: 2021-05-03T04:44:48.906Z
 tags: 
 editor: markdown
 dateCreated: 2021-04-19T05:36:56.365Z
@@ -127,8 +127,12 @@ Vue.component(id, [definition])
   </div>
   <script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
   <script>
+    import MessageList from './components/MessageList.js'
     let vm = new Vue({
     	el: '#app',
+      components: {
+      	MessageList
+      },
       data:{
         	message:[],
         	newMessage: ''
@@ -140,9 +144,10 @@ Vue.component(id, [definition])
       },
       methods: {
         addMessage (event) {
+          let now = new Date();
         	if(!this.newMessage){return;}
           this.messages.push({
-            	text: this.message, crateAt: new Date()
+            	id: now.getTiem(), text: this.message, crateAt: new Date()
           });
           this.newMessage = '';
         },
@@ -159,24 +164,49 @@ Vue.component(id, [definition])
 
 ###### components/MessageList.js
 ```javascript
+import MessageListItem from './MessageListItem.js'
 export default {
 	name: 'MessageList',
 	template: 
   '<ul>
-  	<li v-for="item in items" :item="item">
-  		{{ item.text }} - {{ item.createdAt }}
-    <button @click=""deleteMessage(item)">X</button>
-		</li>
+  	<message-list-item v-for="item in items" :item="item" :key="item.id" @delete="deleteMessage(item)">
+		</message-list-item>
 	</ul>',
+	components: {
+  	MessageListItem
+  },
 	porps: {
     items: {
       type: Array,
-       required: true
+      required: true
     }
   },
   methods: {
     deleteMessage(message) {
     	this.$emit('delete', message);
+    }
+  }
+}
+```
+
+###### components/MessageListItem.js
+```javascript
+export default {
+	name: 'MessageListItem',
+	template: 
+  '<li v-for="item in items" :item="item">
+  		{{ item.text }} - {{ item.createdAt }}
+    <button @click="deleteMessage(item)">X</button>
+	</li>',
+	porps: {
+    item: {
+      type: Object,
+      required: true
+    }
+  },
+  methods: {
+    deleteClicked(message) {
+    	this.$emit('delete');
     }
   }
 }
