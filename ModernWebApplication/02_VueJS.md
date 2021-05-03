@@ -2,7 +2,7 @@
 title: 02.Vue.js
 description: 
 published: true
-date: 2021-05-03T08:05:29.150Z
+date: 2021-05-03T08:10:37.310Z
 tags: 
 editor: markdown
 dateCreated: 2021-04-19T05:36:56.365Z
@@ -254,3 +254,19 @@ Vue.directive('focus', {
 3. update : 포함하는 컴포넌트의 VNode가 업데이트 됐을 때 호출된다. 하지만 자식 컴포넌트의 VNode가 업데이트 되기 전에 호출될 수 있다.
 4. componentupdated : 컴포넌트의 VNode와 자식 컴포넌트의 VNode가 업데이트된 후에 호출된다.
 5. unbind : 요소에서 지시자의 바인딩이 해제될 때 한번만 호출된다.
+
+## 필터
+이중 중괄호 보간법 혹은 v-bind 표현법을 이용할 때 텍스트 형식을 지정
+Vue.filter() 로 전역으로 등록 혹은 컴포넌트의 filter 프로퍼티로 로컬로 등록
+```javascript
+<p> {{item.createAt | datetime }} </p>
+
+const formatter = new Intl.DateTimeFormat('en-US', {
+year : 'numeric', month: 'long', week: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' 
+});
+
+Vue.filter('datetime', function(value){
+	if (!value) return '';
+  return formatter.format(value);
+});
+```
