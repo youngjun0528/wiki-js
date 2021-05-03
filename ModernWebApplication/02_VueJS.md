@@ -2,7 +2,7 @@
 title: 02.Vue.js
 description: 
 published: true
-date: 2021-05-03T07:58:00.355Z
+date: 2021-05-03T08:05:29.150Z
 tags: 
 editor: markdown
 dateCreated: 2021-04-19T05:36:56.365Z
@@ -229,3 +229,28 @@ export default {
 9. beforeDestroy : 인스턴스가 파괴되지 전에 호출된다. 이 단계에서 인스턴스는 여전히 완전한 기능을 수행한다.
 10. destroyed : 인스턴스가 파괴된 후에 호출도니다. 이 단계에서 인스턴스의 모든 지시자 바인딩이 해제되고 모든 이벤트 리스너가 제거되며 모든 하위 Vue 인스턴스가 파괴된다.
 11. errorCaptured : 자손 컴포넌트에서 에러가 검출될 때마다 호출된다.
+
+## 지시자
+지시자는 표현식의 값이 변경될 때 이에 반응해 DOM에 변경 사항을 적용한다.
+- v-for : 원본 데이터를 기반으로 요소 또는 데이터 블록을 여러번 랜더링
+- v-on : 리스너를 DOm 요소에 부착한다.
+- 사용자 정의 지시자
+	* 지시자 정의 객체 생성
+  * Vue.directive() 이용하여 전역으로 등록 또는 컴포넌트의 directives 프로퍼티로 로컬로 등록
+```javascript
+// v-focus 라는 사용자 정의 지시자 등록
+Vue.directive('focus', {
+  // 바인딩된 요소가 DOM에 삽입될 때
+  inserted: function (el) {
+    // 요소에 Focus를 둔다.
+    el.focus();
+  }
+});
+```
+
+### Hook 함수
+1. bind : 지시자가 처음 요소에 바인딩 됐을 때 한번만 호출도니다. 여기서 일회성 설정을 수행할 수 있다.
+2. inserted : 바인딩 도니 요소가 부모노드에 삽입됐을 때 호출된다. 그러나 이 시점에 부모노드는 DOM에 삽입되지 않았을 수도 있다.
+3. update : 포함하는 컴포넌트의 VNode가 업데이트 됐을 때 호출된다. 하지만 자식 컴포넌트의 VNode가 업데이트 되기 전에 호출될 수 있다.
+4. componentupdated : 컴포넌트의 VNode와 자식 컴포넌트의 VNode가 업데이트된 후에 호출된다.
+5. unbind : 요소에서 지시자의 바인딩이 해제될 때 한번만 호출된다.
