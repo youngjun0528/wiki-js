@@ -2,7 +2,7 @@
 title: 02.Vue.js
 description: 
 published: true
-date: 2021-05-03T04:44:48.906Z
+date: 2021-05-03T05:25:22.552Z
 tags: 
 editor: markdown
 dateCreated: 2021-04-19T05:36:56.365Z
@@ -111,12 +111,6 @@ Vue.component(id, [definition])
 <body>
 	<div id="app" v-cloak>
     <message-list :items="messages" @delete="deleteMessage"></message-list>
-  	<ul>
-      	<li v-for="message in messages">
-          {{ message.text }} - {{message.createAt}}
-          <button v-on:click="deleteMessage(message)">X</button>
-        </li>
-    </ul>
     <form @submit.prevent="addMessage">
       	<textarea v-model="newMessage" placeholder="Leave a message">
       	</textarea>
@@ -161,6 +155,9 @@ Vue.component(id, [definition])
 </html>
 ```
 - 14 line : 사용자 정의 컴포넌트와 네이티브 HTML 요소에 같은 방식으로 데이터를 바인딩 하고 이벤트 리스너를 부착
+	* v-bind:items -> :items
+  * v-on:delete -> @delete
+- 28-30 line : 사용자 정의 컴포넌트를 등록
 
 ###### components/MessageList.js
 ```javascript
@@ -188,6 +185,14 @@ export default {
   }
 }
 ```
+- 3 line : component name 프로퍼티, 필수는 아니나 디버깅에 도움
+	* 프로퍼티의 이른을 파스칼표기(첫단어를 대문자로 시작)를 케밥표기법(하이픈으로 연결)으로 변환하고 컴포넌트 등록시 컴포넌트 ID로 활용
+  * 부모 컴포넌트와 밀접하게 연결된 자식 컴포넌트는 부모 컴포넌트의 이름을 접두사로 표함하여야 한다.
+- 4 line : inline-template
+- 12-17 line : item의 프로퍼티 정의, type이 배열이고 필수 항목으로 지정, 만약 다른 값이 들어온다면 에러 발생
+	* props : 자식 컴포넌트에서 부모 데이터를 참조하기 위해 선언, v-bind 지시자로 연결
+- 19 line : Delete 버튼의 Cilck 이벤트 수신, $emit 으로 이벤트를 트리거, 부모 컴토넌트에서 @delete 에서 수신
+
 
 ###### components/MessageListItem.js
 ```javascript
@@ -211,3 +216,6 @@ export default {
   }
 }
 ```
+
+## Vue 인스턴스 라이프 사이클
+1. beforeCreate : 인스터늣 내부 이벤트와 라이프 사이클 상태가 초기화 된 후에 호출된다.
