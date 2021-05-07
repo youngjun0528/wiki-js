@@ -2,7 +2,7 @@
 title: 02.Vue.js
 description: 
 published: true
-date: 2021-05-03T08:29:26.539Z
+date: 2021-05-07T04:27:10.274Z
 tags: 
 editor: markdown
 dateCreated: 2021-04-19T05:36:56.365Z
@@ -273,3 +273,31 @@ Vue.filter('datetime', function(value){
 
 ## 믹스인
 모든 컴포넌트의 옵션을 포함할 수 있는 자바스크립트 객체
+믹스인 파일을 mixins 디렉터리에 하위에 위치하고 ${mixinName}.mixin.js 형식으로 한다.
+
+# 기반기술
+## 반응형 시스템
+반응형 데이터 바인딩 시스템(Reactive data binding system)
+1. 옵저버 디자인 패턴(observer design pattern)
+3. Vue 인스턴스가 초기화 되는 동안 data 객체의 프로퍼티에 접근하고 프로퍼티의 값을 업데이트하기 위해 Object.defineProperty() 메소드로 Getter와 Setter 함수를 생성해 data 객체의 모든 프로퍼티를 반응형으로 구성
+3. render 함수가 DOM을 업데이트 하면, Template에서 사용된 프로퍼티의 Getter 함수를 호출
+4. 모든 Vue 컴포넌트 인스턴스에 대해서 Vuejs는 랜더 와쳐(Render Watcher)를 생성해 render 함수의 의존관계에 있는 프로퍼티를 수집
+5. 프로퍼티의 값을 변경해야 할 때마다 Vue.js는 Render Watcher에 통지하고, 랜더 와쳐 DOM을 업데이트 하기 위해 render 함수를 트리거
+
+```javascript
+data : {message:[], newMessage:''},
+```
+- 인스턴스 초기화
+- vm._data 객체 생성
+- vm.message와 vm.newMessage 에 대해 Object.defineProperty로 Gettter 와 Setter를 정의해 두 프로퍼티에 접근 가능한 Proxy를 생성 ( 만약, vm.newMessage 접근 -> vm_data.newMessage 로 접근 )
+- Observer 객체 생성 후 vm._data._ob_로 할당하여 감시
+  - 반응형 Getter : 데이터의 의존성 수집
+  - 반응형 Setter : 데이터의 변경 사항을 Watcher 에 통지
+- 데이터 변경 내역을 확인 불가능한 경우 : 배열 조작 - 별도의 메소드를 사용해서 확인
+
+```javascript
+computed: {addDisable(){}}
+```
+- addDisable 에 대해 지연 와쳐(Lazy Watcher) 생성
+- Map 으로 구현된 vm._computedWatcher 에 할당 (addDisable : Key / 객체 : Value)
+- 랜더 함수가 호출될때 addDisable 프로퍼티를 평가, 이후 이 값을 Watcher 객체에 업데이트 한다.
