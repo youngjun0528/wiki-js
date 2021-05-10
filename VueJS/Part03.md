@@ -1,27 +1,13 @@
 ---
-title: Part03.SPA구조
+title: Part03.Vue구조
 description: 
 published: true
-date: 2021-05-10T07:30:32.726Z
+date: 2021-05-10T07:36:04.427Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-10T07:29:45.077Z
 ---
 
-# Tempate 구조와 컴포넌트
-1. 기본 템플릿 구조
-- node_modules/ : npm 라이브러리
-- public/
-	* index.html : 브라우저에 보여지는 페이지
-- src/
-	* assets/ : Static 파일(image, css 등)
-  * components/
-  	* HellowWorld.vue : Vue 컴포넌트
-  * views/ : Vue 정적 단일 Tempalte
-  * App.vue
-  * main.js : Main. Vue 인스턴스 생성, 각종 모듈 IMPORT
-  * router/
-  	* index.js : 앱 라우터 설정
-  * store/
-  	* index.js : vuex. 상태광리 모듈 설정
-- package.json : npm 설정
+- Vue 구조
+	- [01.템플릿 구조와 컴포넌트](http://35.247.115.28/ko/VueJS/Part03/01)
+  - [02.컴포넌트 라이프사이클](http://35.247.115.28/ko/VueJS/Part03/02)
