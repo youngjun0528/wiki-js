@@ -1,8 +1,8 @@
 ---
-title: 01.Template구조
+title: Part03.SPA구조
 description: 
 published: true
-date: 2021-05-10T07:29:45.077Z
+date: 2021-05-10T07:30:32.726Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-10T07:29:45.077Z
