@@ -2,14 +2,15 @@
 title: VueJS
 description: 
 published: true
-date: 2021-05-10T07:32:31.099Z
+date: 2021-05-10T07:35:22.997Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-10T07:31:27.843Z
 ---
 
 - Vue Template 구조
-	- [템플릿 구조와 컴포넌트](http://35.247.115.28/ko/VueJS/Part03)
+	- [01.템플릿 구조와 컴포넌트](http://35.247.115.28/ko/VueJS/Part03/01)
+  - [02.컴포넌트 라이프사이클](http://35.247.115.28/ko/VueJS/Part03/02)
 
 - Vue Template 기본 문법
 	- [01.컴포넌트 기초](http://35.247.115.28/ko/VueJS/Part04/01)
