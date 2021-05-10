@@ -2,13 +2,13 @@
 title: VueJS
 description: 
 published: true
-date: 2021-05-10T07:32:17.078Z
+date: 2021-05-10T07:32:31.099Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-10T07:31:27.843Z
 ---
 
-- Vue Template 기본 문법
+- Vue Template 구조
 	- [템플릿 구조와 컴포넌트](http://35.247.115.28/ko/VueJS/Part03)
 
 - Vue Template 기본 문법
