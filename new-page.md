@@ -2,7 +2,7 @@
 title: E-Book
 description: 
 published: true
-date: 2021-05-11T23:24:52.454Z
+date: 2021-05-11T23:41:52.387Z
 tags: 
 editor: markdown
 dateCreated: 2021-04-26T08:25:26.432Z
@@ -20,3 +20,5 @@ dateCreated: 2021-04-26T08:25:26.432Z
 [아마존 웹 서비스를 다루는 기술](http://www.pyrasis.com/private/2014/09/30/publish-the-art-of-amazon-web-services-book)
 
 http://paullab.co.kr/referenceroom.html
+
+https://thebook.io/
