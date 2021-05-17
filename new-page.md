@@ -2,7 +2,7 @@
 title: E-Book
 description: 
 published: true
-date: 2021-05-11T23:41:52.387Z
+date: 2021-05-17T10:36:23.837Z
 tags: 
 editor: markdown
 dateCreated: 2021-04-26T08:25:26.432Z
@@ -22,3 +22,5 @@ dateCreated: 2021-04-26T08:25:26.432Z
 http://paullab.co.kr/referenceroom.html
 
 https://thebook.io/
+
+https://gitlab.com/youngjun0528/ebook/-/blob/master/ds_lecture_01.pdf
