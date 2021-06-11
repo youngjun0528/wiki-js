@@ -1,0 +1,92 @@
+<!--
+title: 3.4.1 통계분석의 이해
+description: 
+published: true
+date: 2021-06-11T06:35:24.506Z
+tags: 
+editor: ckeditor
+dateCreated: 2021-06-11T06:35:24.506Z
+-->
+
+<ol>
+  <li>통계자료의 획득 방법<ol>
+      <li>전수조사<ol>
+          <li>대상 집단 모두를 조사</li>
+        </ol>
+      </li>
+      <li>표본조사<ol>
+          <li>모집단 : 조사하고자 하는 대상 집단 전체</li>
+          <li>원소 : 모집단을 구성하는 개체</li>
+          <li>표본 : &nbsp;추출한 모집단의 일부 원소</li>
+          <li>모수 : 모집단에 대한 정보</li>
+        </ol>
+      </li>
+      <li>통계학<ol>
+          <li>모수 통계학</li>
+          <li>비모수 통계학<ol>
+              <li><strong>모수에 대한 가정이 없다.</strong> 모집단의 형태에 관계없이 주어진 데이터에서 직접 확률을 계산하여 통계학적 검정을 하는 분석법<ol>
+                  <li>모집단의 현상이 정규분포가 아니거나 적절히 변환되지 않을 때</li>
+                  <li>표본 수가 적을 때</li>
+                  <li>자료들이 서로 독립적</li>
+                  <li>변인의 척도가 명명척도나 서열척도 일 때</li>
+                  <li>빈도수와 같은 비 연속적인 자료</li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+          <li>가정을 만족시키기 못한 상태에서 그대로 모수 통계 분석을 함을써 발생할 수 있는 오류를 줄인다.</li>
+          <li>질적 척도로 측정된 자료도 분석</li>
+          <li>비교적 쉽고 빠르게 통계량 추출</li>
+          <li>표본 수가 적어도 사용</li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li>정리</li>
+</ol>
+<figure class="table">
+  <table>
+    <tbody>
+      <tr>
+        <td colspan="2">입력 데이터 형태</td>
+        <td>비모수 분석</td>
+        <td>모수 분석</td>
+      </tr>
+      <tr>
+        <td rowspan="3">2개 수치형 변수의 상관 관계</td>
+        <td>두 변수 모두 순위 변수</td>
+        <td>스피어만 순위 상관계수</td>
+        <td rowspan="3">피어슨 상관계수</td>
+      </tr>
+      <tr>
+        <td>
+          <p>1 변수는 수치</p>
+          <p>2 변수는 이산적 이진형</p>
+        </td>
+        <td>Point-Biserial 상관계수</td>
+      </tr>
+      <tr>
+        <td>
+          <p>1 변수는 수치</p>
+          <p>2 변수는 연속적 이진형</p>
+        </td>
+        <td>Biseral 상관계수</td>
+      </tr>
+      <tr>
+        <td colspan="2">2개 범주형 변수간의 상관관계</td>
+        <td>카이제곱 검전</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td colspan="2">2개&nbsp;집단의 평균 비교</td>
+        <td>Mann-Whitney U-test</td>
+        <td>T-검정</td>
+      </tr>
+      <tr>
+        <td colspan="2">3애 이상의 집단의 평균 비교</td>
+        <td>Kruskal-Walls H-test</td>
+        <td>ANOVA</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
