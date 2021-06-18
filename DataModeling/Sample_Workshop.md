@@ -2,7 +2,7 @@
 title: Sample Workshop
 description: 
 published: true
-date: 2021-06-18T07:16:54.039Z
+date: 2021-06-18T07:25:53.217Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-18T04:38:09.024Z
@@ -115,3 +115,23 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
 | 내역 | 내역 （V，500） |
 | ID | 전자메일 |
 | 장소 | 위치 |
+
+### 도메인 길이 지정 및 할당
+| 엔티티타입명 | 속성명 | 도메인 | 데이터 타입 | 비고 | 
+|---|:---|:---|:---|:---|
+| 주문 | 주문일련번호 | 주문일련번호 | VAFCHAR2(10) | | 
+| | 주문자성명 | 이름(V40) | VARCHAR2(40) | |  
+| | 주문주민번호 | 주민번호 | VARCHAR2(13) | '-' 제외 | 
+| | 주문자주소 | 주소 | VARCHAR2(120) | | 
+| | 주문전화번호 | 전화번호 | VARCHAR2(18) | '-' 포함가능 |  
+| | 신청자우편번호 | 우편번호 | CHAR(7) | '-' 포함 | 
+| | 신청자전자메일 | 전자메일 | VARCHAR2(40) | |  
+| 고객 | 고객번호 | 고객번호 | VARCHAR2(10) | | 
+| | 고객성명 | 이름(V40） | VARCHAR2(40) | | 
+| | 사업자번호 | 사업자번호 | VAFCHAR2(20) | | 
+| | 위치 | 위치 | VAFCHAR2(200) | |  
+| | 계약년월 | 년월 | CHAR(6) | YYYYMM 형식의 TEXT | 
+| 자재 | 자재번호 | 자재번호 | VARCHAR2(14) | YYYYMMDD+SEQ(7) | 
+| | 자재 내역 | 내역(V100) | VAFCHAR2(100) | | 
+| | 입고일자 | 일자 | VAFCHAR2(8) | YYYYMMDD 형식의 TEXT | 
+| | 수량 | 수량 (N10) | NUMBER(10) | | 
