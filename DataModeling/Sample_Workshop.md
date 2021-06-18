@@ -1,8 +1,8 @@
 ---
-title: Sample Workshop
+title: Sample Workshop 1
 description: 
 published: true
-date: 2021-06-18T07:32:14.978Z
+date: 2021-06-18T07:33:13.199Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-18T04:38:09.024Z
