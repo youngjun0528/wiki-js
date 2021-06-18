@@ -2,7 +2,7 @@
 title: Sample Workshop
 description: 
 published: true
-date: 2021-06-18T07:26:08.121Z
+date: 2021-06-18T07:26:21.313Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-18T04:38:09.024Z
@@ -127,7 +127,7 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
 | | 신청자우편번호 | 우편번호 | CHAR(7) | '-' 포함 | 
 | | 신청자전자메일 | 전자메일 | VARCHAR2(40) | |  
 | 고객 | 고객번호 | 고객번호 | VARCHAR2(10) | | 
-| | 고객성명 | 이름(V40)| VARCHAR2(40) | | 
+| | 고객성명 | 이름(V40) | VARCHAR2(40) | | 
 | | 사업자번호 | 사업자번호 | VAFCHAR2(20) | | 
 | | 위치 | 위치 | VAFCHAR2(200) | |  
 | | 계약년월 | 년월 | CHAR(6) | YYYYMM 형식의 TEXT | 
