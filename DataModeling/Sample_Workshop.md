@@ -2,11 +2,13 @@
 title: Sample Workshop
 description: 
 published: true
-date: 2021-06-18T07:26:21.313Z
+date: 2021-06-18T07:32:14.978Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-18T04:38:09.024Z
 ---
+
+[참고파일 workshop.pdf](/workshop.pdf)
 
 ## 엔터티 타입 선정
 ### 시나리오
