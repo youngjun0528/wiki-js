@@ -2,13 +2,13 @@
 title: Sample Project
 description: 
 published: true
-date: 2021-06-18T07:31:57.201Z
+date: 2021-06-18T07:32:29.095Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-18T04:22:24.667Z
 ---
 
-[참고파일](/project.pdf)
+[참고파일 project.pdf](/project.pdf)
 
 ## 시나리오
 ### 회원등록 및 주문
