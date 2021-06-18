@@ -2,13 +2,13 @@
 title: Sample Project
 description: 
 published: true
-date: 2021-06-18T04:22:24.667Z
+date: 2021-06-18T07:30:38.862Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-18T04:22:24.667Z
 ---
 
-# 시나리오
+[project.pdf](/project.pdf)# 시나리오
 ### 회원등록 및 주문
 - 인터넷에서 도서를 구입하기 위해서는 반드시 우리 회사에 회원으로 등록해야 구매가 가능하다.
 - 인터넷에 회원 등록하는 정보로는 회원번호, 주민등록번호, 주소, 전화번호, 전자메일 ID, 휴대폰번호, 결재 방법이 있다.
