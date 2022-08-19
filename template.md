@@ -1,8 +1,8 @@
 ---
-title: Untitled Page
+title: Default Template
 description: 
 published: true
-date: 2022-04-22T08:46:09.475Z
+date: 2022-08-19T07:03:17.429Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-02T12:06:21.841Z
