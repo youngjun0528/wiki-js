@@ -2,7 +2,7 @@
 title: E-Book
 description: 
 published: true
-date: 2021-05-17T21:47:16.819Z
+date: 2023-01-19T03:00:33.521Z
 tags: 
 editor: markdown
 dateCreated: 2021-04-26T08:25:26.432Z

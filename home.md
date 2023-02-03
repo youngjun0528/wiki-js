@@ -1,13 +1,12 @@
 ---
-title: Docker 
+title: Docker
 description: 
 published: true
-date: 2021-07-01T07:11:48.863Z
+date: 2023-01-19T03:00:36.432Z
 tags: 
 editor: markdown
 dateCreated: 2021-04-16T06:04:34.012Z
 ---
-
 
 > 참고 : https://www.44bits.io/ko/keyword/linux-container
 리눅스

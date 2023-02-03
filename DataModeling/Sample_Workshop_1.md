@@ -2,7 +2,7 @@
 title: Sample Workshop 1
 description: 
 published: true
-date: 2021-06-18T07:47:48.266Z
+date: 2023-01-19T03:05:33.537Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-18T04:38:09.024Z
